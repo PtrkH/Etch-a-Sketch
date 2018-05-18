@@ -1,0 +1,87 @@
+body{
+  background: #d4d6d4;
+}
+#bigbox{
+  display: grid;
+  grid-template-columns: repeat(var(--colNum), auto);
+  grid-template-rows: repeat(var(--colNum), auto);
+  width:800px;
+  height:800px;
+  border:solid black;
+}
+
+.box{
+  background: white;
+  height: auto;
+  width: auto;
+  border: none;
+}
+
+#bigboxdaddy{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.boxhover {
+  background-color: red;
+}
+
+.boxhover2{
+  background-color: purple;
+}
+
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select, option, button {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+    position: relative;
+    background-color: #8c8688;
+    border: none;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:after {
+    content: "";
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+option{
+  max-width: 300px;
+
+}
+
+.Apply{
+  background-color: #d86363;
+}
